@@ -13,8 +13,14 @@ export default function HomePage() {
     "Redux/Toolkit",
     "TypeScript",
     "JavaScript",
+    "CSS",
+    "HTML",
     "Tailwind CSS",
+    "Next.js",
     "Git",
+    "Axios",
+    "Agile",
+    "Responsive Design",
     "Github",
     "API",
     "Web Development",
@@ -23,27 +29,30 @@ export default function HomePage() {
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and MongoDB",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      link: "#",
+      description: "A fully responsive and feature-rich Ecommerce web application that allows users to browse products, manage carts, place orders, and complete payments.",
+      tech: ["React","Next.js","TypeScript","Clerk" ,"Framer Motion","Zustand","Tailwind CSS","Stripe API"],
+      link: "https://trendorashopping.netlify.app",
+      previewImage: "../trendora.png",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-      link: "#",
+      title: "Spotify Music Player",
+      description: "A fully responsive music streaming web application that integrates Spotify’s Web API to fetch and play music, display playlists, albums, and track details in real-time.",
+      tech: ["React" ,"Tailwind CSS", "Spotify Web API","Spotify Authentication","JavaScript","Context API", "Axios"],
+      link: "https://myspotifystream.netlify.app/",
+      previevImage :"../spotify.png",
     },
     {
-      title: "Weather Dashboard",
+      title: "Weather Analytics Dashboard",
       description: "Interactive weather dashboard with data visualization",
       tech: ["React", "D3.js", "Weather API", "Tailwind CSS"],
-      link: "#",
+      link: "https://myweatheranalytics.netlify.app/",
+      previewImage: "../weather_analytics.png",
     },
   ]
     const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/ChetanJanraoResume.pdf";
-    link.download = "ChetanJanraoResume.pdf"; // Change the file name as needed
+    link.download = "ChetanJanraoResume.pdf"; 
     link.click();
   };
   return (
@@ -175,11 +184,13 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+           
             {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow">
+              <Card key={index} className="group hover:shadow-lg transition-shadow hover:cursor-pointer">
                 <CardContent className="p-6">
-                  <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 rounded-lg mb-4 flex items-center justify-center ">
                     <Code className="w-12 h-12 text-blue-600 dark:text-blue-400" />
+                      {/* <img src={project.previewImage} alt="Project 1" className="w-full h-auto  shadow-lg" />  */}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
