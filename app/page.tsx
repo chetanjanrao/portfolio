@@ -30,16 +30,16 @@ export default function HomePage() {
     {
       title: "E-Commerce Platform",
       description: "A fully responsive and feature-rich Ecommerce web application that allows users to browse products, manage carts, place orders, and complete payments.",
-      tech: ["React","Next.js","TypeScript","Clerk" ,"Framer Motion","Zustand","Tailwind CSS","Stripe API"],
+      tech: ["React", "Next.js", "TypeScript", "Clerk", "Framer Motion", "Zustand", "Tailwind CSS", "Stripe API"],
       link: "https://trendorashopping.netlify.app",
       previewImage: "../trendora.png",
     },
     {
       title: "Spotify Music Player",
       description: "A fully responsive music streaming web application that integrates Spotify’s Web API to fetch and play music, display playlists, albums, and track details in real-time.",
-      tech: ["React" ,"Tailwind CSS", "Spotify Web API","Spotify Authentication","JavaScript","Context API", "Axios"],
+      tech: ["React", "Tailwind CSS", "Spotify Web API", "Spotify Authentication", "JavaScript", "Context API", "Axios"],
       link: "https://myspotifystream.netlify.app/",
-      previevImage :"../spotify.png",
+      previevImage: "../spotify.png",
     },
     {
       title: "Weather Analytics Dashboard",
@@ -49,10 +49,10 @@ export default function HomePage() {
       previewImage: "../weather_analytics.png",
     },
   ]
-    const handleDownload = () => {
+  const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/ChetanJanraoResume.pdf";
-    link.download = "ChetanJanraoResume.pdf"; 
+    link.download = "ChetanJanraoResume.pdf";
     link.click();
   };
   return (
@@ -85,15 +85,21 @@ export default function HomePage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="ghost" size="icon">
-                  <Github className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <Linkedin className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <Mail className="w-5 h-5" />
-                </Button>
+                <a href="https://github.com/chetanjanrao" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon">
+                    <Github className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/chetan-janrao" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon">
+                    <Linkedin className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a href="mailto:jrchetan1997@gmail.com">
+                  <Button variant="ghost" size="icon">
+                    <Mail className="w-5 h-5" />
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -184,13 +190,13 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-           
+
             {projects.map((project, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow hover:cursor-pointer">
                 <CardContent className="p-6">
                   <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 rounded-lg mb-4 flex items-center justify-center ">
                     <Code className="w-12 h-12 text-blue-600 dark:text-blue-400" />
-                      {/* <img src={project.previewImage} alt="Project 1" className="w-full h-auto  shadow-lg" />  */}
+                    {/* <img src={project.previewImage} alt="Project 1" className="w-full h-auto  shadow-lg" />  */}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
