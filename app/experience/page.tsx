@@ -124,7 +124,7 @@ export default function ExperiencePage() {
       title: "Developing Front End Apps with React",
       issuer: "IBM",
       date: "2025",
-      credentialId: "CAD0210EN",
+      credentialId: "9652cdb1d5984e378a07c4d596271c94",
     },
     {
       title: "AI for Beginners",
