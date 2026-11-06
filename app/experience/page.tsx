@@ -7,8 +7,24 @@ import Link from "next/link";
 export default function ExperiencePage() {
   const experiences = [
     {
+      title: "Software Engineer",
+      company: "Cognizant Technology Solutions India Private Limited",
+      location: "Pune, India",
+      duration: "Dec 2025 - July 2026",
+      type: "Full-time",
+      description: [
+        "Experienced in designing responsive, component-based user interfaces with React, TypeScript and modern CSS.",
+         "Skilled in building RESTful APIs with Spring Boot, Spring Data JPA and Hibernate, backed by relational databases such as PostgreSQL.",
+      "Strong understanding of the complete flow from UI to API to database, including validation, error handling and data mapping.",
+      "Implemented secure authentication and authorization using Spring Security, including session handling, CSRF protection and two-factor authentication.",
+      "Comfortable integrating front-end and back-end systems with Axios or Fetch, handling CORS, cookies and API errors.",
+          "Experienced working in Agile teams using Git and GitHub for version control and code reviews."
+      ],
+      technologies: ["React", "TypeScript", "Java 1.8","Spring Boot", "Spring Data JPA", "Hibernate", "PostgreSQL", "REST APIs", "Git"],
+    },
+    {
       title: "System Engineer",
-      company: "Infosys Ltd",
+      company: "Infosys Limited",
       location: "Pune, India",
       duration: "Sep 2023 - Feb 2025",
       type: "Full-time",
@@ -20,20 +36,6 @@ export default function ExperiencePage() {
       ],
       technologies: ["React", "TypeScript", "Tailwind CSS", "API", "Git", "Github"],
     },
-    // {
-    //   title: "System  Developer",
-    //   company: "Digital Innovations Ltd",
-    //   location: "Pune, India",
-    //   duration: "Jun 2022 - Dec 2022",
-    //   type: "Full-time",
-    //   description: [
-    //     "Developed and maintained full-stack web applications",
-    //     "Built RESTful APIs using Node.js and Express.js",
-    //     "Implemented database designs using MongoDB and PostgreSQL",
-    //     "Participated in agile development processes and sprint planning",
-    //   ],
-    //   technologies: ["React", "Node.js", "MongoDB", "Express.js", "JavaScript"],
-    // },
     {
       title: "Junior Web Developer",
       company: "StartupHub",
@@ -115,6 +117,22 @@ export default function ExperiencePage() {
       github: "https://github.com/chetanjanrao/whether-analytics",
       demo: "https://myweatheranalytics.netlify.app/",
     },
+    {
+      title: "Hospital Management Application",
+      description: "A full stack hospital management system with secure login and two-factor authentication. It lets staff manage patients, doctors, appointments and medical records from one dashboard.",
+      technologies: ["React", "TypeScript", "Spring Boot", "Git","Spring Security", "Spring Data JPA", "Hibernate", "PostgreSQL", "REST APIs" ],
+      features: [
+        "Email and password sign-in with session cookies and CSRF protection.",
+        "TOTP setup with a QR code for Microsoft Authenticator, plus a six-digit code check at login.",
+        "Signed-in users only can open the dashboard, and Sign Out ends the session.",
+        "Sidebar navigation, a top bar with search, a breadcrumb and a responsive mobile menu.",
+        "Add, view, edit and delete patients, with search by name, ID or phone, and form validation (age, 10-digit phone, email, blood group).",
+        "Add, view, edit and delete doctors, with search, a specialization filter, availability status and a consultation fee.",
+        "Create records linked to an existing patient and an available doctor, with diagnosis, prescription, notes and a status (Active, Follow-up, Closed). You can search, filter by status and view full details."
+      ],
+      github: "https://github.com/chetanjanrao/SuryaHospital",
+      demo: "https://suryahospital.netlify.app/",
+    }
    
   ]
 
@@ -153,8 +171,7 @@ export default function ExperiencePage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Experience & Projects</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A comprehensive overview of my professional journey, key projects, and technical achievements over the past
-            3+ years in software development.
+            React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications
           </p>
         </div>
 

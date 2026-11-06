@@ -26,8 +26,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Chetan Janrao</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              React Developer passionate about creating beautifu and  functional web applications that solve
-              real-world problems.
+              React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications.
             </p>
             <div className="flex space-x-2">
               {socialLinks.map((social) => (

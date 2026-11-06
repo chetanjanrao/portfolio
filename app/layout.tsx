@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Chetan Janrao - React Developer",
   description:
-    "React Developer with 3+ years of experience building modern web applications using React, Next.js, Node.js, and more.",
+    "React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications.",
   keywords: [ "React", "Tailwind CSS", "Web Development"],
   authors: [{ name: "Chetan Janrao" }],
   creator: "Chetan Janrao",
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://chetanjanrao.dev",
     title: "Chetan Janrao - React Developer",
-    description: "React Developer with 3+ years of experience building modern web applications.",
+    description: "  React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications",
     siteName: "Chetan Janrao Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Chetan Janrao - React Developer",
-    description: "React Developer with 3+ years of experience building modern web applications.",
+    description: "React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications",
     creator: "@chetanjanrao",
   },
     generator: 'chetanjanrao.dev',

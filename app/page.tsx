@@ -9,12 +9,11 @@ import Image from "next/image"
 export default function HomePage() {
   const skills = [
     "React",
-    "Redux",
     "Redux/Toolkit",
     "TypeScript",
     "JavaScript",
-    "CSS",
-    "HTML",
+    "CSS3",
+    "HTML5",
     "Tailwind CSS",
     "Next.js",
     "Git",
@@ -24,8 +23,15 @@ export default function HomePage() {
     "Github",
     "API",
     "Web Development",
-  ]
+    "Java ",
+    "Spring Boot",
+    "Spring Security",
+    "Spring Data JPA",
+    "Hibernate",
+    "REST APIs",
+    "PostgreSQL",
 
+  ];
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -48,11 +54,18 @@ export default function HomePage() {
       link: "https://myweatheranalytics.netlify.app/",
       previewImage: "../weather_analytics.png",
     },
+    {
+      title :"Hospital Management Application",
+      description :"A full stack hospital management system with secure login and two-factor authentication. It lets staff manage patients, doctors, appointments and medical records from one dashboard.",
+      tech : ["React", "TypeScript", "Spring Boot", "Git","Spring Security", "Spring Data JPA", "Hibernate", "PostgreSQL", "REST APIs" ],
+      link :"https://suryahospital.netlify.app/",
+      previewImage :"../weather_analytics.png"
+    }
   ]
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/ChetanJanraoResume.pdf";
-    link.download = "ChetanJanraoResume.pdf";
+    link.href = "/Chetan_Janrao_React_Java_Full_Stack_Developer.pdf";
+    link.download = "Chetan_Janrao_React_Java_Full_Stack_Developer.pdf";
     link.click();
   };
   return (
@@ -67,10 +80,10 @@ export default function HomePage() {
                   Hi, I'm <span className="text-blue-600 dark:text-blue-400">Chetan Janrao</span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300">
-                  React Developer with 3+ years of experience building modern web applications
+                  React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications
                 </p>
                 <p className="text-lg text-gray-500 dark:text-gray-400">
-                  I create beautiful, responsive, and user-friendly applications using modern frontend technologies.
+                  On the front end, I build responsive, component-based interfaces with React and TypeScript. On the back end, I develop REST APIs with Spring Boot, JPA and Hibernate, backed by PostgreSQL. I care about writing maintainable code, handling authentication and validation properly, and delivering features that work well from the UI down to the database.
                 </p>
               </div>
 
@@ -128,8 +141,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate React developer with 3+ years of experience in creating web applications. I love
-              turning complex problems into simple, beautiful designs.
+              React & Java Full Stack Developer | Spring Boot, JPA, PostgreSQL | 4+ years building scalable enterprise applications
             </p>
           </div>
 
@@ -139,7 +151,7 @@ export default function HomePage() {
                 <Code className="w-12 h-12 mx-auto mb-4 text-blue-600" />
                 <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Creating responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks.
+                  Creating responsive and interactive user interfaces with React,Typescript, Next.js, and modern CSS frameworks.
                 </p>
               </CardContent>
             </Card>
@@ -149,7 +161,7 @@ export default function HomePage() {
                 <Palette className="w-12 h-12 mx-auto mb-4 text-green-600" />
                 <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Building robust APIs and server-side applications using API  and various databases.
+                  Java Backend Developer | Spring Boot, Spring Security, JPA/Hibernate, PostgreSQL | REST API.
                 </p>
               </CardContent>
             </Card>
